@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+	font-family: sans-serif;
+}
+
+header {
+	position: absolute;
+}
+
+.menu {
+	position: absolute;
+	width: 100vw;
+	height: 60px;
+	font-weight: bold;
+	background: #285430;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu ul li {
+	display: inline-block;
+}
+
+footer {
+	position: absolute;
+	background: #285430;
+	bottom: 0px;
+	width: 100vw;
+	text-align: center;
+}
