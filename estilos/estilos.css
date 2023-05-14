@@ -62,7 +62,7 @@ li a:hover {
 	cursor: crosshair;
 	opacity: 5;
 	filter: contrast(120%);
-	width: 55%;
+	width: 60%;
 }
 
 div {
@@ -90,7 +90,7 @@ h2 {
 	text-align: justify;
 	justify-content: center;
 	font-size: large;
-	color: #5f7065;
+	color: #4f5350;
 
 }
 
