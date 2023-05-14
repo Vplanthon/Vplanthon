@@ -12,6 +12,7 @@ li {
 	list-style: none;
 	font-weight: bold;
 }
+
 /* Estilos del Menú de Navegación */
 .navbar {
 	display: flex;
@@ -43,21 +44,67 @@ li {
 	text-decoration: none;
 	color: #ffffff;
 }
+
 li a:hover {
 	color: rgb(171, 154, 56);
+}
+
+/*Estilos de vivero*/
+
+.fila {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-top: 3%;
+}
+
+.fila img:hover {
+	cursor: crosshair;
+	opacity: 5;
+	filter: contrast(120%);
+	width: 55%;
+}
+
+div {
+	width: 30%;
+}
+
+.plantas {
+	width: 50%;
+	height: 50%;
+	margin: 2% 0 0 25%;
+	justify-content: center;
+	box-shadow: 0.15vw 0.15vw 0.15vw 0.15vw #86b898;
+}
+
+h2 {
+	text-align: center;
+	height: 80%;
+}
+
+.descripcion {
+	display: flex;
+	height: 100%;
+	width: 90%;
+	margin: 0% auto 10% auto;
+	text-align: justify;
+	justify-content: center;
+	font-size: large;
+	color: #5f7065;
+
 }
 
 /*estilos del pie de pagina*/
 
 footer {
-	position: absolute;
+	position: static;
 	background: #285430;
 	bottom: 0px;
 	width: 100vw;
 	text-align: center;
 	display: flex;
-	justify-content: center; 
-	align-items: center; 
-	height: 60px;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
 	font-weight: bold;
 }
