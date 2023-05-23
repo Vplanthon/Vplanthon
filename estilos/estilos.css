@@ -1,8 +1,9 @@
-body {
-	margin: 0px;
-	padding: 0px;
-	width: 100vw;
-	height: 100vh;
+/* Estilos generales */
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: "Yanone Kaffeesatz", sans-serif;
 }
 
 ul,
@@ -20,6 +21,9 @@ li {
 	align-items: center;
 	background: #285430;
 	padding: 10px;
+	position: sticky;
+	top: 0;
+	z-index: 9999;
 }
 
 .navbar-logo {
@@ -27,17 +31,24 @@ li {
 	align-items: center;
 }
 
+.logo {
+	width: 5.5vw;
+	height: 7.5vh;
+}
+
 .navbar-logo a {
 	margin-right: 10px;
 }
 
 .navbar-title {
-	font-size: 18px;
+	font-size: 2vw;
+	color: white;
 }
 
 .navbar-menu li {
 	display: inline;
 	margin-left: 10px;
+	font-size: 1.5vw;
 }
 
 .navbar-menu li a {
@@ -49,62 +60,513 @@ li a:hover {
 	color: rgb(171, 154, 56);
 }
 
-/*Estilos de vivero*/
+/* Estilos del carrete */
+.carrete {
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carreteImg {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+}
+
+.carreteImg img {
+	flex-shrink: 0;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/*CARTAS INICIO*/
+
+.recomendados {
+	margin-top: 20px;
+}
+
+.recomendados h2 {
+	text-align: center;
+}
+
+.cartasContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.carta {
+	position: relative;
+	width: 15vw;
+	height: 28vh;
+	background: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	transition: transform 0.3s ease;
+}
+
+.carta:hover {
+	transform: scale(1.1);
+}
+
+.carta a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.carta img {
+	width: 12vw;
+	height: 20vh;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.carta h3 {
+	margin-top: 10px;
+	font-size: 150%;
+	font-weight: bold;
+	color: black;
+}
+
+/*Cuidados*/
+
+.seccionCuidados {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.cuidado {
+	width: 27vw;
+	height: 65vh;
+	margin-bottom: 20px;
+	background-color: white;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.cuidado img {
+	width: inherit;
+	height: 42vh;
+}
+
+.cuidado h3 {
+	font-size: 150%;
+	margin-top: 10px;
+}
+
+.cuidado p {
+	margin-top: 10px;
+	color: #888;
+	font-size: 120%;
+	padding-bottom: 5px;
+}
+
+.cuidado hr {
+	border: none;
+	border-top: 1px solid #ccc;
+	margin: 10px 0;
+}
+
+.cuidado a {
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 130%;
+	padding-bottom: 5px;
+}
+
+.cuidado a:hover {
+	color: #ab9a38;
+}
+
+/* PAGINA DE CONTACTO*/
+/* FORMULARIO */
+
+.formula {
+	max-width: 30%;
+	background: -webkit-linear-gradient(
+		to right,
+		#c4ead8,
+		#0c7142
+	);
+	background: linear-gradient(to right, #c4ead8, #0c7142);
+	margin: 0 auto;
+	padding: 40px;
+	border: 35px solid #ccc;
+	border-color: #728c6a;
+	border-radius: 10px;
+	border-style: ridge;
+}
+
+/* encolumno los label uno abajo del otro */
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+/* Tamaño yforma de los campos a completar */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	max-width: 90%;
+	padding: 10px 0px 5px 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 25px;
+}
+
+/* formato campo mensaje */
+
+.estilomsg {
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	max-width: 90%;
+	padding: 10px 0px 0px 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+/* Posicion de los iconos de los campos */
+
+.formula i {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+	outline: none;
+}
+
+/* Posicion del placeholder */
+
+.formula input::placeholder {
+	padding: 0px 0px 0px 0px;
+	position: relative;
+	top: -3px;
+}
+
+/* Campo mensaje */
+
+textarea {
+	height: 200px;
+	width: 100%;
+	max-width: 94%;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+/* Boton de enviar */
+
+input[type="submit"] {
+	background-color: #2b5e0d;
+	max-width: 90%;
+	color: white;
+	padding: 10px 20px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+/*ESTILOS PAGINA VIVERO*/
 
 .fila {
 	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	margin-top: 3%;
+	justify-content: space-between;
+	margin-bottom: 20px;
 }
 
-.fila img:hover {
-	cursor: crosshair;
-	opacity: 5;
-	filter: contrast(120%);
-	width: 60%;
+.fila div {
+	flex-basis: 30%;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
 }
 
-div {
-	width: 30%;
+.fila img {
+	width: 100%;
+	border-radius: 8px;
 }
 
-.plantas {
-	width: 50%;
-	height: 50%;
-	margin: 2% 0 0 25%;
-	justify-content: center;
-	box-shadow: 0.15vw 0.15vw 0.15vw 0.15vw #86b898;
+.fila h2 {
+	font-size: 18px;
+	margin-top: 10px;
 }
 
-h2 {
-	text-align: center;
-	height: 80%;
+.fila .descripcion {
+	margin-top: 10px;
+	line-height: 1.4;
 }
 
-.descripcion {
+/*ESTILOS CUIDADOS*/
+
+.seccion {
+	margin-bottom: 40px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.seccion h2 {
+	color: #3a5f39;
+}
+
+.plant-info {
 	display: flex;
-	height: 100%;
-	width: 90%;
-	margin: 0% auto 10% auto;
-	text-align: justify;
-	justify-content: center;
-	font-size: large;
-	color: #4f5350;
-
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
-/*estilos del pie de pagina*/
+.plant-image {
+	width: 45%;
+}
 
+.plant-text {
+	width: 45%;
+}
+
+.seccion img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 10px;
+	border-radius: 8px;
+}
+
+.seccion p {
+	line-height: 1.5;
+	font-size: 18px;
+	color: #333;
+}
+
+.seccion ul {
+	list-style-type: disc;
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.video-container {
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Estilos adicionales */
+
+.plant-text {
+	background-color: #9bd59b;
+	padding: 10px;
+	border-radius: 8px;
+}
+
+.plant-text p {
+	font-size: 24px;
+	color: #333;
+}
+
+@media (max-width: 600px) {
+	.fila {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.fila div {
+		width: 80%;
+		margin-bottom: 15px;
+	}
+
+	.plant-image,
+	.plant-text {
+		width: 100%;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+	.plant-info {
+		flex-wrap: nowrap;
+	}
+
+	.plant-image {
+		width: 30%;
+	}
+
+	.plant-text {
+		width: 65%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.plant-info {
+		flex-wrap: nowrap;
+	}
+
+	.plant-image {
+		width: 40%;
+	}
+
+	.plant-text {
+		width: 55%;
+	}
+}
+
+/* Estilos del footer */
 footer {
 	position: static;
-	background: #285430;
-	bottom: 0px;
-	width: 100vw;
+	bottom: 0;
+	width: 100%;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 40px;
+	height: 60px;
 	font-weight: bold;
+	background: #285430;
+	color: #ffffff;
+	margin-top: 10px;
+}
+
+/*Breakpoint inicio*/
+
+/* Breakpoint para pantallas chicas */
+
+@media (max-width: 600px) {
+	.navbar-menu li {
+		font-size: 4vw;
+	}
+
+	.navbar-title {
+		display: none;
+	}
+
+	.logo {
+		width: 18vw;
+		height: 8vh;
+	}
+
+	.carreteImg img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.cartasContainer {
+		flex-direction: column;
+	}
+
+	.carta {
+		width: 80vw;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.carta img {
+		width: 50%;
+	}
+
+	.seccionCuidados {
+		flex-direction: column;
+	}
+
+	.cuidado {
+		width: 80vw;
+		height: auto;
+	}
+}
+
+/* Breakpoint para pantallas medianas */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+	.navbar-menu li {
+		font-size: 2.5vw;
+	}
+
+	.navbar-title {
+		font-size: 3vw;
+		color: white;
+	}
+
+	.logo {
+		width: 12vw;
+		height: 8vh;
+	}
+
+	.carreteImg img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.cartasContainer {
+		margin-bottom: 10px;
+	}
+
+	.carta {
+		width: 22vw;
+		height: 40vh;
+	}
+
+	.carta img {
+		width: 90%;
+		height: 40%;
+	}
+
+	.seccionCuidados {
+		flex-direction: column;
+	}
+
+	.cuidado {
+		width: 70vw;
+		height: auto;
+	}
+}
+
+/* Breakpoint para pantallas grandes */
+@media (min-width: 1025px) {
+	.navbar-menu li {
+		font-size: 1.5vw;
+	}
+
+	.logo {
+		width: 6vw;
+		height: 8vh;
+	}
+
+	.carta {
+		width: 15vw;
+		height: 28vh;
+	}
+
+	.cuidado {
+		width: 27vw;
+		height: 65vh;
+	}
 }

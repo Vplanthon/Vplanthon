@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="e">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,13 +7,35 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0"
 		/>
-		<link rel="stylesheet" href="https://vplanthon.github.io/Vplanthon/estilos/estilos.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/estilos/estilos.css" />
+		<script src="https://kit.fontawesome.com/afad969ea4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 		<title>CONTACTO</title>
 	</head>
 	<body class="body">
 		<nav class="navbar">
 			<div class="navbar-logo">
-				<a href="#	"><img src="#" alt="Logo" /></a>
+				<a href="/index.html"
+					><img
+						class="logo"
+						src="/img/PLANTHON.png"
+						alt="Logo"
+				/></a>
 				<h1 class="navbar-title">PLANTHON</h1>
 			</div>
 			<ul class="navbar-menu">
@@ -33,9 +55,42 @@
 		</nav>
 		<div class="Container">
 			<head>
-				<header>FORMULARIO DE CONTACTO</header>
+				<header>
+					<h1 style="text-align: center;"><i class="fa-sharp fa-solid fa-table-list" style="color: #44732b;"></i>
+						FORMULARIO DE CONTACTO</h1>
+				</header>
 			</head>
+			<form action="" name="formulario" method="get">
+
+				<div class="formula">
+			
+					<label for="Nombre">Nombre:</label>
+					<i class="fa-solid fa-user fa-beat" style="color: #2c4902;"></i>
+					<input type="text" id="nombred" name="nombre" minlength="4" maxlength="20" placeholder="Escriba su Nombre">
+			
+					<label for="Apellido">Apellido:</label>
+					<i class="fa-solid fa-user fa-beat" style="color: #2c4902;"></i>
+					<input type="text" id="apellidod" name="apellido" maxlength="20" placeholder="Escriba su Apellido">
+			
+					<label for="email">Email:</label>
+					<i class="fa-solid fa-at fa-beat" style="color: #2c4d02;"></i>
+					<input type="email" id="email" name="email" placeholder="Escriba su email">
+			
+					<label for="telefono">Telefono:</label>
+					<i class="fa-solid fa-phone fa-beat" style="color: #2c4902;"></i>
+					<input type="tel" id="telefonod" name="telefono" placeholder="Escriba su telefono">
+			
+					<label for="Mensaje">Mensaje:</label>
+					<i class="fa-regular fa-envelope fa-beat" style="color: #2c4902;"></i>
+					<textarea class=estilomsg id="mensaje" name="mensaje" minlength="5" placeholder="Escriba su mensaje"></textarea>
+			
+					<h1></h1>
+					<input type="submit" id="b1" name="btn" value="Enviar"></input>
+			
+				</div>
+			</form>
 		</div>
 		<footer>Hecho con ♡ por el grupo 18</footer>
+		<script src="script.js"></script>
 	</body>
 </html>
