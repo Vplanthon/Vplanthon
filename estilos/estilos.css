@@ -227,7 +227,7 @@ input[type="tel"] {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	max-width: 90%;
-	padding: 10px 0px 5px 40px;
+	padding: 10px 0px 5px 30px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	margin-bottom: 20px;
@@ -242,7 +242,7 @@ input[type="tel"] {
 	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	max-width: 90%;
-	padding: 10px 0px 0px 40px;
+	padding: 10px 0px 0px 30px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	margin-bottom: 20px;
@@ -264,6 +264,15 @@ input[type="tel"] {
 	position: relative;
 	top: -3px;
 }
+
+/* visualizacion Placeholder */
+.input-field {
+    width: 100px; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
 
 /* Campo mensaje */
 
