@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="estilos.css" />
+		<title>Editar Producto</title>
+	</head>
+	<body>
+		<header class="headerInicio">
+			<div class="logo">
+				<a href="https://vplanthon.netlify.app/index.html"
+					><img
+						class="logo"
+						src="img/PLANTHON.png"
+						alt="Logo"
+				/></a>
+			</div>
+		</header>
+
+		<main>
+			<form id="editarProductoForm">
+				<div>
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" />
+				</div>
+				<div>
+					<label for="precio">Precio:</label>
+					<input type="text" id="precio" />
+				</div>
+				<div>
+					<label for="stock">Stock:</label>
+					<input type="text" id="stock" />
+				</div>
+				<div>
+					<label for="imagen">Imagen:</label>
+					<input type="text" id="imagen" />
+				</div>
+				<button type="submit">Guardar Cambios</button>
+				<div class="boton2">
+					<a class="boton" href="index.html">Volver</a>
+				</div>
+			</form>
+		</main>
+
+		<script src="editarScript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="stylesheet" href="estilos.css" />
+		<title>Tabla de Productos</title>
+	</head>
+	<body>
+		<header class="headerInicio">
+			<div class="logo">
+				<a href="https://vplanthon.netlify.app/index.html"
+					><img
+						class="logo"
+						src="img/PLANTHON.png"
+						alt="Logo"
+				/></a>
+			</div>
+			<a
+				href="nuevoProducto.html"
+				class="nuevo-producto-btn"
+			>
+				Nuevo Producto
+			</a>
+		</header>
+
+		<main>
+			<table class="product-table">
+				<thead>
+					<tr>
+						<th></th>
+						<th>ID</th>
+						<th>NOMBRE</th>
+						<th>PRECIO</th>
+						<th>STOCK</th>
+						<th>IMAGEN</th>
+						<th>EDITAR</th>
+						<th>ELIMINAR</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Aquí se llenarán los datos de la tabla dinámicamente desde el backend -->
+				</tbody>
+			</table>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>

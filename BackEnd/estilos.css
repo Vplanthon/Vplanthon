@@ -1,0 +1,213 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 8px;
+	background-color: #285430;
+}
+.headerInicio {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px;
+	background-color: #285430;
+}
+
+.logo img {
+	width: 7vw;
+	height: 13vh;
+}
+
+button {
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	background-color: rgb(171, 154, 56);
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+button:hover {
+	background-color: #fff;
+	color: rgb(171, 154, 56);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.product-table {
+	border-collapse: collapse;
+	width: 80%;
+}
+
+.product-table th,
+.product-table td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.product-table th {
+	background-color: #f2f2f2;
+}
+
+.product-table td img {
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.product-table .edit-icon,
+.product-table .delete-icon {
+	cursor: pointer;
+	color: #007bff;
+}
+
+/* Estilos para el icono de editar */
+.edit-icon {
+	/* Agrega aquí los estilos para el icono de editar */
+	background-image: url(/img/editar-informacion.png); /* Ruta a tu archivo de icono de editar */
+	/* ... otros estilos ... */
+}
+
+/* Estilos para el icono de eliminar */
+.delete-icon {
+	/* Agrega aquí los estilos para el icono de eliminar */
+	background-image: url(/img/compartimiento.png); /* Ruta a tu archivo de icono de eliminar */
+	/* ... otros estilos ... */
+}
+
+/*Estilo pagina nuevo producto*/
+
+header h1 {
+	display: flex;
+	color: white;
+	text-align: center;
+}
+
+/* Estilos formulario nuevo producto*/
+#nuevoProductoForm {
+	max-width: 700px;
+	width: 580px;
+	margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+	margin-top: 6vh;
+	padding: 20px;
+	background-color: #285430;
+	border-radius: 8px; /* Establece los bordes redondeados */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Agrega una sombra alrededor del formulario */
+}
+
+/* Estilos para las etiquetas */
+#nuevoProductoForm label {
+	display: block;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Estilos para los campos de entrada */
+#nuevoProductoForm input {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+/* Estilos para el botón */
+#nuevoProductoForm button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.boton {
+	text-decoration: none;
+	padding: 10px 46%;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	background-color: rgb(171, 154, 56);
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	box-sizing: border-box; /* Incluye el padding en el ancho total del botón */
+}
+
+.boton:hover {
+	background-color: #fff;
+	color: rgb(171, 154, 56);
+}
+.boton2 {
+	padding-top: 20px;
+}
+
+.nuevo-producto-btn {
+	text-decoration: none;
+	width: 10vw;
+	padding: 10px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border: none;
+	background-color: rgb(171, 154, 56);
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.nuevo-producto-btn:hover {
+	background-color: #fff;
+	color: rgb(171, 154, 56);
+}
+
+/* Estilos formulario nuevo producto*/
+#editarProductoForm {
+	width: 30vw;
+	margin: 0 auto; /* Centra el formulario horizontalmente en la página */
+	margin-top: 6vh;
+	padding: 20px;
+	background-color: #285430;
+	border-radius: 8px; /* Establece los bordes redondeados */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Agrega una sombra alrededor del formulario */
+}
+
+/* Estilos para las etiquetas */
+#editarProductoForm label {
+	display: block;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/* Estilos para los campos de entrada */
+#editarProductoForm input {
+	width: 97%;
+	padding: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+/* Estilos para el botón */
+#editarProductoForm button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
